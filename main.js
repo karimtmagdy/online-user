@@ -22,7 +22,7 @@ reload.onclick = function () {
 
 function online() {
   title.innerHTML = "Online Now";
-  title.style.color = "green";
+  title.style.color = "#5800ff";
   ul.classList.add("hide");
   reload.classList.add("hide");
 }
