@@ -7,42 +7,55 @@ body {
   font-family: system-ui;
 }
 .parent {
-  width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-/* .container {
-
-} */
-.title {
-  font-size: 30px;
-}
-ul {
+  justify-content: center;
   position: relative;
-  left: 30px;
-  list-style: inside;
 }
-.reload {
-  padding: 10px;
-  margin-top: 10px;
-  outline: none;
-  border: none;
-  background-color: #666;
-  color: white;
+.parent .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: url(img/hamza-nouasria-OqIlgE_yGTA-unsplash.jpg) center no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  border: 2px solid;
   border-radius: 20px;
-  cursor: pointer;
-  width: fit-content;
+  text-align: center;
+}
+.parent .container .title {
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  border: 2px solid;
+  background-color: transparent;
+  /* filter: blur(0); */
+  backdrop-filter: blur(8px);
+}
+.parent .container ul {
+  list-style: none;
+}
+.parent .container ul li {
+  margin-top: 5px;
+  color: white;
+}
+.parent .container .reload {
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: 100px;
+  background-color: transparent;
 }
 .hide {
   display: none;
 }
-
 @media(max-width: 767px) {
   .container {
-    background-color: powderblue;
     width: 300px;
+    white-space: wrap;
     height: 400px;
     padding: 4px;
     border-radius: 10px;
